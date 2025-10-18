@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 메모장</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>간단한 메모장</h1>
+    
+    <!-- 메모 입력 폼 -->
+    <form id="memoForm" action="#" method="post">
+        <fieldset>
+            <legend>새 메모 작성</legend>
+            <label for="memo-title">제목:</label><br>
+            <input type="text" id="memo-title" name="title" placeholder="메모 제목을 입력하세요" required><br><br>
+            
+            <label for="memo-content">내용:</label><br>
+            <textarea id="memo-content" name="content" rows="10" cols="50" placeholder="메모 내용을 입력하세요" required></textarea><br><br>
+            
+            <input type="submit" value="메모 저장">
+            <input type="button" id="resetBtn" value="초기화">
+        </fieldset>
+    </form>
+    
+    <hr>
+    
+    <!-- 메모 목록 표시 영역 -->
+    <div id="memoList">
+        <h2>저장된 메모</h2>
+        <div id="memos"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
